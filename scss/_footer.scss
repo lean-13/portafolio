@@ -1,0 +1,124 @@
+// variables
+@import "variables";
+
+.footer--modificacion {
+    display: flex;
+    justify-content: space-between;
+}
+.footer--size {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+// formulario
+.formulario--modificacion {
+    text-align: center;
+}
+.formulario--size {
+    width: 50%;
+}
+.formulario--color {
+    h5 {
+        color: $color4;
+    }
+}
+// email
+.email--color input{
+    background-color: $color1;
+    border-color: $color4;
+    color: $color3;
+}
+
+.email--color div span {
+    background-color: $color1; 
+    border-color: $color4;
+    color: $color2;
+}
+.formulario--color textarea {
+    background-color: $color1; 
+    border-color: $color4;
+    color: $color3;
+}
+
+// redes
+.redes--modificacion {
+    text-align: center;
+}
+.redes--size {
+    width: 50%;
+}
+.redes--color {
+    h5 {
+        color: $color4;
+    }
+}
+
+.redes__contacto--modificacion {
+    text-align: left;
+
+    div {
+        border-radius: 5px;
+        position: relative;
+    }
+    div a{
+        text-decoration: none;
+        
+    }
+}
+.redes__contacto--size {
+    padding-left: 5rem;
+
+    div {
+        margin-top: 10px;
+        padding: 5px;
+
+    }
+    div a {
+        font-size: 20px;
+        padding-left: 10px;
+        top: -2px;
+
+    }
+    div a i {
+        font-size: 26px;
+        top: 10;
+        right: 0;
+        padding-right: 10px;
+        position: absolute;
+    }
+}
+.redes__contacto--color {
+    div {
+        background-color: $color6;
+    }
+    div a {
+        color: $color3;
+    }
+}
+
+// boton
+.boton__enviar--modificacion input{
+    border-radius: 5px;
+    border: none;
+}
+.boton__enviar--size input {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    width: 80px;
+}
+.boton__enviar--color input {
+    background-color: $color4;
+    box-shadow: 0px 0px 0px 0px $color4;
+    color: $color1;
+}
+.boton__enviar--animate input{
+    transition: all 0.3s ease;
+}
+.boton__enviar--animate input:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 15px 0px $color4;
+}
+.boton__enviar--animate input:active {
+    transform: translateY(3px);
+    box-shadow: 0px 0px 0px 0px $color4;
+}

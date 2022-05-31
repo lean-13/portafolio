@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio</title>
+    <!-- scss -->
+    <link rel="stylesheet" href="scss/style.css" />
+    <!-- bootrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/2004eac9e6.js" crossorigin="anonymous"></script>
+  </head>
+  <body id="body">
+    <nav class="navbar--modificacion navbar--size navbar--color navbar--animation">
+      <div class="navbar__menu--modificacion">
+        <div class="icons__navbar">
+          <!-- cv -->
+          <a href="https://docs.google.com/document/d/1SZoBRns4cKH_HJF97wwnRVUut7WbVJpFHWRXXqlzfho/edit"><i class="fas fa-file-alt"></i></a>
+        </div>
+        <div class="icons__navbar">
+          <!-- email -->
+          <a href="mailto:leandrodavid13@hotmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <div class="icons__navbar">
+          <!-- github -->
+          <a href="https://github.com/lean-13"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="icons__navbar">
+          <!-- linkedin -->
+          <a href="https://www.linkedin.com/in/leandro-go%C3%B1i-desarrollo-web/"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="icons__navbar">
+          <a href="#inicioBiografia"><span class="material-symbols-outlined">
+            nest_thermostat_gen_3
+            </span></a>
+        </div>
+      </div>
+    </nav>
+    <section>
+      <section class="biografia--modificacion biografia--size biografia--color" id="inicioBiografia">
+        <div class="img__biografia--modificacion img__biografia--size img__biografia--color">
+          <img src="/img/IMG_0888.avif" alt="foto biografia">
+        </div>
+        <div class="text__biografia--modificacion text__biografia--size text__biografia--color">
+          <p class="text__prenombre">Hola, mi nombre es</p>
+          <h3 class="text__nombre">Leandro Goñi,</h3>
+          <p class="text__desarollador">Desarollador Front End</p>
+        </div>
+      </section>
+      <section class="conocimientos--modificacion conocimientos--size conocimientos--color">
+        <div class="skill">
+          <h4>¿Quien soy?</h4>
+          <div class="text__conocimiento">
+            <p>Soy <strong>leandro goñi</strong> un desarrolador web, con gran capacidad de comunicacion y de trabajo en equipo.</p>
+            <div class="linkVerCv">
+              <a href="https://docs.google.com/document/d/1SZoBRns4cKH_HJF97wwnRVUut7WbVJpFHWRXXqlzfho/edit"><i class="fas fa-file-alt"></i> Ver CV</a>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <h4>Mis skills:</h4>
+          <div class="img__skill--modificacion img__skill--size img__skill--color">
+            <div>
+              <img src="skill 3d/js.png" alt="logo skill">
+            </div>
+            <div>
+              <img src="skill 3d/js.png" alt="logo skill">
+            </div>
+            <div>
+              <img src="skill 3d/js.png" alt="logo skill">
+            </div>
+            <div>
+              <img src="skill 3d/js.png" alt="logo skill">
+            </div>
+            <div>
+              <img src="skill 3d/js.png" alt="logo skill">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="proyectos">
+        <h4>Proyectos:</h4>
+        <div class="seccion__proyectos--modificacion seccion__proyectos--size seccion__proyectos--color">
+          <div class="proyectos--modificacion proyectos--size proyectos--color proyectos--animate">
+            <img src="img/proyectos/musicHouse.png" alt="Proyecto">
+            <a href="https://lean-13.github.io/tienda-web-musica-carrito/index.html">
+              <div class="descripcion__proyecto">
+                <p>Ecommerce creado con html,css, js</p>
+              </div>
+            </a>
+          </div>
+          <div class="proyectos--modificacion proyectos--size proyectos--color proyectos--animate">
+            <img src="img/proyectos/3dShop.png" alt="Proyecto">
+            <a href="">
+              <div class="descripcion__proyecto">
+                <p>Ecommerce creado con react</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </section>
+    </section>
+    <footer class="footer--modificacion footer--size .footer--color">
+      <div class="formulario--modificacion formulario--size formulario--color" id="FormularioContacto">
+        <h5>Formulario</h5>
+        <form
+          action="enviar.php"
+          method="POST"
+          enctype="application/x-www-form-urlencoded"
+        >
+          <div class="input-group mb-3 email--modificacion email--size email--color">
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Email"
+              required
+            />
+            <div class="input-group-append">
+              <span class="input-group-text">@example.com</span>
+            </div>
+          </div>
+          <textarea
+            name="areadetexto"
+            id="campoTexto"
+            cols="30"
+            rows="10"
+            placeholder="Escriba Aqui!!"
+            class="form-control textarea--modificacion textarea--size"
+            required
+          ></textarea>
+          <div class="boton__enviar--modificacion boton__enviar--size boton__enviar--color boton__enviar--animate">
+            <input
+              type="submit"
+              name="Enviar"
+              class="enviar--modificacion enviar--color enviar--size"
+            />
+          </div>
+        </form>
+      </div>
+      <div class="redes--modificacion redes--size redes--color">
+        <h5>Redes</h5>
+        <div class="redes__contacto--modificacion redes__contacto--size redes__contacto--color">
+          <div>
+            <a href="mailto:leandrodavid13@hotmail.com"><i class="fas fa-envelope"></i> leandrodavid13@hotmail.com</a>
+          </div>
+          <div>
+            <a href="https://github.com/lean-13"><i class="fab fa-github"></i> lean-13</a>
+          </div>
+          <div>
+            <a href="https://www.linkedin.com/in/leandro-go%C3%B1i-desarrollo-web/"><i class="fab fa-linkedin"></i> leandro-goñi-desarrollo-web</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- boostrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

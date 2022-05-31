@@ -1,0 +1,46 @@
+// variables
+@import "variables";
+
+.navbar--modificacion {
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+}
+.navbar--size {
+    width: 50px;
+    height: 100%;
+}
+.navbar--color {
+    background-color: $color1;
+}
+.navbar__menu--modificacion {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    text-align: center;
+}
+// icons
+.icons__navbar {
+    padding-top: 20px;
+    a {
+        text-decoration: none;
+        i {
+            font-size: 30px;
+            color: $color5;
+        }
+        i:hover {
+            color: $color4;
+            transition: 0.7s;
+        }
+        span {
+            font-size: 30px;
+            color: $color5;
+        }
+        span:hover {
+            color: $color4;
+            transition: 0.7s;
+        }
+           
+    }
+}
