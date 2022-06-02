@@ -7,6 +7,8 @@
     <title>Portafolio</title>
     <!-- scss -->
     <link rel="stylesheet" href="scss/style.css" />
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- bootrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -22,23 +24,23 @@
   <body id="body">
     <nav class="navbar--modificacion navbar--size navbar--color navbar--animation">
       <div class="navbar__menu--modificacion">
-        <div class="icons__navbar">
+        <div class="icons__navbar" data-aos="fade-right" data-aos-duration="1400">
           <!-- cv -->
           <a href="https://docs.google.com/document/d/1SZoBRns4cKH_HJF97wwnRVUut7WbVJpFHWRXXqlzfho/edit"><i class="fas fa-file-alt"></i></a>
         </div>
-        <div class="icons__navbar">
+        <div class="icons__navbar" data-aos="fade-right" data-aos-duration="1300">
           <!-- email -->
           <a href="mailto:leandrodavid13@hotmail.com"><i class="fas fa-envelope"></i></a>
         </div>
-        <div class="icons__navbar">
+        <div class="icons__navbar" data-aos="fade-right" data-aos-duration="1200">
           <!-- github -->
           <a href="https://github.com/lean-13"><i class="fab fa-github"></i></a>
         </div>
-        <div class="icons__navbar">
+        <div class="icons__navbar" data-aos="fade-right" data-aos-duration="1100">
           <!-- linkedin -->
           <a href="https://www.linkedin.com/in/leandro-go%C3%B1i-desarrollo-web/"><i class="fab fa-linkedin"></i></a>
         </div>
-        <div class="icons__navbar">
+        <div class="icons__navbar" data-aos="fade-right" data-aos-duration="1000">
           <a href="#inicioBiografia"><span class="material-symbols-outlined">
             nest_thermostat_gen_3
             </span></a>
@@ -47,17 +49,17 @@
     </nav>
     <section>
       <section class="biografia--modificacion biografia--size biografia--color" id="inicioBiografia">
-        <div class="img__biografia--modificacion img__biografia--size img__biografia--color">
+        <div class="img__biografia--modificacion img__biografia--size img__biografia--color" data-aos="fade-right" data-aos-duration="1000">
           <img src="/img/IMG_0888.avif" alt="foto biografia">
         </div>
-        <div class="text__biografia--modificacion text__biografia--size text__biografia--color">
+        <div class="text__biografia--modificacion text__biografia--size text__biografia--color" data-aos="fade-up" data-aos-duration="1000">
           <p class="text__prenombre">Buenas, mi nombre es</p>
           <h3 class="text__nombre">Leandro Goñi,</h3>
           <p class="text__desarollador">Desarollador Front End</p>
         </div>
       </section>
       <section class="conocimientos--modificacion conocimientos--size conocimientos--color">
-        <div class="skill">
+        <div class="skill" data-aos="fade-up" data-aos-duration="800">
           <h4>¿Quien soy?</h4>
           <div class="text__conocimiento">
             <p>Soy <strong>leandro goñi</strong> un desarrollador web, con gran capacidad de comunicacion y de trabajo en equipo. Domino tanto html y css, se utilizar el procesador <strong>sass</strong>, tengo conocimientos de <strong>js</strong> con la libreria <strong>jquery</strong> y <strong>react</strong>.</p>
@@ -66,10 +68,10 @@
             </div>
           </div>
         </div>
-        <div class="skill">
+        <div class="skill" data-aos="fade-up" data-aos-duration="800">
           <h4>Mis skills:</h4>
           <div class="img__skill--modificacion img__skill--size img__skill--color">
-            <div>
+            <div >
               <a href="https://es.wikipedia.org/wiki/HTML5">
                 <img src="img/skills/html.svg" alt="html">
               </a>
@@ -95,7 +97,7 @@
       <section id="proyectos">
         <h4>Proyectos:</h4>
         <div class="seccion__proyectos--modificacion seccion__proyectos--size seccion__proyectos--color">
-          <div class="proyectos--modificacion proyectos--size proyectos--color proyectos--animate">
+          <div class="proyectos--modificacion proyectos--size proyectos--color proyectos--animate" data-aos="zoom-in" data-aos-duration="800">
             <img src="img/proyectos/musicHouse.png" alt="Proyecto">
             <a href="https://lean-13.github.io/tienda-web-musica-carrito/index.html">
               <div class="descripcion__proyecto">
@@ -103,7 +105,7 @@
               </div>
             </a>
           </div>
-          <div class="proyectos--modificacion proyectos--size proyectos--color proyectos--animate">
+          <div class="proyectos--modificacion proyectos--size proyectos--color proyectos--animate" data-aos="zoom-in" data-aos-duration="800">
             <img src="img/proyectos/3dShop.png" alt="Proyecto">
             <a href="">
               <div class="descripcion__proyecto">
@@ -116,14 +118,15 @@
       </section>
     </section>
     <footer class="footer--modificacion footer--size .footer--color">
-      <div class="formulario--modificacion formulario--size formulario--color" id="FormularioContacto">
-        <h5>Formulario</h5>
+      <div class="formulario--modificacion formulario--size formulario--color">
+        <h5 data-aos="fade-right" data-aos-duration="800">Formulario</h5>
         <form
           action="enviar.php"
           method="POST"
           enctype="application/x-www-form-urlencoded"
+          id="FormularioContacto"
         >
-          <div class="input-group mb-3 email--modificacion email--size email--color">
+          <div class="input-group mb-3 email--modificacion email--size email--color" data-aos="fade-right" data-aos-duration="800">
             <input
               type="email"
               class="form-control"
@@ -143,26 +146,28 @@
             placeholder="Escriba Aqui!!"
             class="form-control textarea--modificacion textarea--size"
             required
+            data-aos="fade-right" data-aos-duration="800"
           ></textarea>
           <div class="boton__enviar--modificacion boton__enviar--size boton__enviar--color boton__enviar--animate">
             <input
               type="submit"
               name="Enviar"
               class="enviar--modificacion enviar--color enviar--size"
+              data-aos="fade-up" data-aos-duration="800"
             />
           </div>
         </form>
       </div>
-      <div class="redes--modificacion redes--size redes--color">
-        <h5>Redes</h5>
+      <div class="redes--modificacion redes--size redes--color" >
+        <h5 data-aos="fade-right" data-aos-duration="800">Redes</h5>
         <div class="redes__contacto--modificacion redes__contacto--size redes__contacto--color">
-          <div>
+          <div data-aos="fade-right" data-aos-duration="800">
             <a href="mailto:leandrodavid13@hotmail.com"><i class="fas fa-envelope"></i> leandrodavid13@hotmail.com</a>
           </div>
-          <div>
+          <div data-aos="fade-right" data-aos-duration="800">
             <a href="https://github.com/lean-13"><i class="fab fa-github"></i> lean-13</a>
           </div>
-          <div>
+          <div data-aos="fade-right" data-aos-duration="800">
             <a href="https://www.linkedin.com/in/leandro-go%C3%B1i-desarrollo-web/"><i class="fab fa-linkedin"></i> leandro-goñi-desarrollo-web</a>
           </div>
         </div>
@@ -174,5 +179,18 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <!-- AOS js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- iniciar libreria AOS -->
+    <script>
+      AOS.init({
+          // pixeles para iniciar animacion
+          offset: -20,
+      });
+    </script>
+    <!-- js -->
+    <script src="./js/Formulario.js"></script>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </body>
 </html>
