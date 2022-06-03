@@ -129,11 +129,14 @@
           <div class="input-group mb-3 email--modificacion email--size email--color" data-aos="fade-right" data-aos-duration="800">
             <input
               type="email"
+              name="email"
               class="form-control"
               id="email"
               placeholder="Email"
               required
-            />
+              pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+              title="Ingrese un correo valido"
+            /> 
             <div class="input-group-append">
               <span class="input-group-text">@example.com</span>
             </div>
