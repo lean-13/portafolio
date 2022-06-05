@@ -224,16 +224,29 @@ body::-webkit-scrollbar-thumb {
 }
 
 .img__biografia--modificacion {
-  margin-left: -20px;
+  overflow: hidden;
+  border-radius: 20px;
 }
 
 .img__biografia--modificacion img {
-  border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img__biografia--size {
+  margin-left: -20px;
 }
 
 .img__biografia--size img {
   width: 25rem;
   height: 22rem;
+}
+
+.img__biografia--modificacion:hover img {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 
 .text__biografia--size {
