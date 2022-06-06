@@ -25,6 +25,7 @@
     }
     .skill__lec {
       align-items: center;
+
        h4 {
          padding-left: 40%; 
        }
@@ -49,3 +50,31 @@
     padding-left: 10%;
   }
 }
+@media (max-width: 500px) {
+  .biografia--modificacion {
+    margin-left: 70px;
+  }
+  .img__biografia--modificacion {
+    img {
+      width: 10rem;
+    }
+  }
+  .seccion__proyectos--modificacion {
+    padding-left: 0%;
+  }
+  .skill__lec {
+    align-items: center;
+     h4 {
+       padding-left: 30%; 
+     }
+  }
+  .redes--size {
+    margin-left: 0%;
+
+  }
+}
+@media (max-width: 450px) {
+  .seccion__proyectos--modificacion {
+    margin-left: -14%;
+  }
+} 
