@@ -59,7 +59,7 @@
         </div>
       </section>
       <section class="conocimientos--modificacion conocimientos--size conocimientos--color">
-        <div class="skill" data-aos="fade-up" data-aos-duration="800">
+        <div class="skill__lec" data-aos="fade-up" data-aos-duration="800">
           <h4>¿Quien soy?</h4>
           <div class="text__conocimiento">
             <p>Soy <strong>leandro goñi</strong> un desarrollador web, con gran capacidad de comunicacion y de trabajo en equipo. Domino tanto html y css, se utilizar el procesador <strong>sass</strong>, tengo conocimientos de <strong>js</strong> con la libreria <strong>jquery</strong> y <strong>react</strong>.</p>
@@ -68,7 +68,7 @@
             </div>
           </div>
         </div>
-        <div class="skill" data-aos="fade-up" data-aos-duration="800">
+        <div class="skill__tec" data-aos="fade-up" data-aos-duration="800">
           <h4>Mis skills:</h4>
           <div class="img__skill--modificacion img__skill--size img__skill--color">
             <div >
@@ -120,46 +120,48 @@
     <footer class="footer--modificacion footer--size .footer--color">
       <div class="formulario--modificacion formulario--size formulario--color">
         <h5 data-aos="fade-right" data-aos-duration="800">Formulario</h5>
-        <form
+        <div>
+          <form
           action="enviar.php"
           method="POST"
           enctype="application/x-www-form-urlencoded"
           id="FormularioContacto"
-        >
-          <div class="input-group mb-3 email--modificacion email--size email--color" data-aos="fade-right" data-aos-duration="800">
-            <input
-              type="email"
-              name="email"
-              class="form-control"
-              id="email"
-              placeholder="Email"
-              required
-              pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
-              title="Ingrese un correo valido"
-            /> 
-            <div class="input-group-append">
-              <span class="input-group-text">@example.com</span>
+          >
+            <div class="input-group mb-3 email--modificacion email--size email--color" data-aos="fade-right" data-aos-duration="800">
+              <input
+                type="email"
+                name="email"
+                class="form-control"
+                id="email"
+                placeholder="Email"
+                required
+                pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+                title="Ingrese un correo valido"
+              /> 
+              <div class="input-group-append">
+                <span class="input-group-text">@example.com</span>
+              </div>
             </div>
-          </div>
-          <textarea
-            name="areadetexto"
-            id="campoTexto"
-            cols="30"
-            rows="10"
-            placeholder="Escriba Aqui!!"
-            class="form-control textarea--modificacion textarea--size"
-            required
-            data-aos="fade-right" data-aos-duration="800"
-          ></textarea>
-          <div class="boton__enviar--modificacion boton__enviar--size boton__enviar--color boton__enviar--animate">
-            <input
-              type="submit"
-              name="Enviar"
-              class="enviar--modificacion enviar--color enviar--size"
-              data-aos="fade-up" data-aos-duration="800"
-            />
-          </div>
-        </form>
+            <textarea
+              name="areadetexto"
+              id="campoTexto"
+              cols="30"
+              rows="10"
+              placeholder="Escriba Aqui!!"
+              class="form-control textarea--modificacion textarea--size"
+              required
+              data-aos="fade-right" data-aos-duration="800"
+            ></textarea>
+            <div class="boton__enviar--modificacion boton__enviar--size boton__enviar--color boton__enviar--animate">
+              <input
+                type="submit"
+                name="Enviar"
+                class="enviar--modificacion enviar--color enviar--size"
+                data-aos="fade-up" data-aos-duration="800"
+              />
+            </div>
+          </form>
+        </div>
       </div>
       <div class="redes--modificacion redes--size redes--color" >
         <h5 data-aos="fade-right" data-aos-duration="800">Redes</h5>

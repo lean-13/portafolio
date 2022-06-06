@@ -27,7 +27,6 @@ body::-webkit-scrollbar-thumb {
 // biografia
 .biografia--modificacion {
     display: flex;
-    flex-direction: row;
     justify-content: center;
 }
 .biografia--size {
@@ -140,11 +139,10 @@ body::-webkit-scrollbar-thumb {
 // section skill
 .conocimientos--modificacion {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 .conocimientos--size {
-    padding-left: 10%;
+    margin-left: 5rem;
     padding-top: 300px;
 }
 .text__conocimiento {
@@ -182,8 +180,13 @@ body::-webkit-scrollbar-thumb {
     box-shadow: 0px 0px 0px 0px $color4;
 }
 // skill 
-.skill {
-    width: 50%;
+.skill__lec {
+    min-width: 50%;
+    // color
+    color: $color4;
+}
+.skill__tec {
+    min-width: 50%;
     // color
     color: $color4;
 }
@@ -197,6 +200,7 @@ body::-webkit-scrollbar-thumb {
 
     div {
         margin-bottom: 20px;
+        
     }
     div img {
         width: 5rem;
