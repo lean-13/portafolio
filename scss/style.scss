@@ -36,7 +36,6 @@ body::-webkit-scrollbar-thumb {
     overflow: hidden;
     border-radius: 20px;
     img {
-        
         object-fit: cover;  
     }
     
@@ -101,11 +100,11 @@ body::-webkit-scrollbar-thumb {
 // card proyectos
 .proyectos--modificacion {
     position: relative;
-
     img {
         border-radius: 10px;
     }
 }
+
 .proyectos--size {
     width: 23rem;
     height: 15rem;
