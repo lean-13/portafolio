@@ -1,0 +1,17 @@
+
+@media (max-width: 1000px) {
+    .footer--modificacion {
+      flex-direction: column;
+    }
+    .biografia--modificacion {
+      flex-direction: column;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .conocimientos--modificacion {
+      flex-direction: column;
+    }
+    
+}

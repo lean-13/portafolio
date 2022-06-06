@@ -21,12 +21,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 @import "navBar";
-
+@import "responsive";
 @import "footer";
 
 // biografia
 .biografia--modificacion {
     display: flex;
+    flex-direction: row;
     justify-content: center;
 }
 .biografia--size {
@@ -139,6 +140,7 @@ body::-webkit-scrollbar-thumb {
 // section skill
 .conocimientos--modificacion {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 .conocimientos--size {
