@@ -2,11 +2,8 @@
 $(document).ready(function () {
 
 	let formulario = $('#FormularioContacto');
-	let email = $('#email');
-	let text = $('#campoTexto')
 	// validaciones
-	let correo = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
-	let correo2 = /^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$/
+	let Correo = /^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$/
 
 	const expresiones = {
 		usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
@@ -17,21 +14,31 @@ $(document).ready(function () {
 	}
 
 	const ValidarForm = (e) => {
-
-		if  (correo.test(e.target.email)) {
-			alert("email valido")
-			console.log("correcto")
+		console.log(Correo.test(e.target.email))
+		if  (Correo.test(e.target.email)) {
+			alert("email valido");
+			console.log("correcto");
 		}
-		if (text.value.length > 20 ) {
-			console.log("20")
+		if ( (Correo.test(e.target.email)) === false ) {
+			console.log("error");
 		}
+		// if (textCamp.value.length > 20 ) {
+		// 	console.log("20")
+		// }
 	}
 
 
 	$(formulario).submit(function(e) {
 		e.preventDefault();
-		ValidarForm()
-		console.log(email.value)
+		let Email = $('#email').val();
+		let textCamp = $('#campoTexto').val();
+
+		if  (!Correo.test(Email)) {
+			console.log("Email invalido");
+			return;
+		}
+
+		console.log("Formulario enviado")
 	})
 
 });
