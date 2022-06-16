@@ -12,10 +12,18 @@ $(document).ready(function () {
 	const mensajeConfirmacion = () => {
 		$(alertEnviado).removeClass("d-none");
 	}
+	const mensajeError = (Errores) => {
+		Errores.forEach(item => {
+			$(item.tipo).removeClass("d-none");
+			$(item.tipo).text(item.msg);
 
+		})
+	}
 	const resetForm = () => {
 		$(formulario)[0].reset()
 	}
+
+
 	$(formulario).submit(function(e) {
 		e.preventDefault();
 		let Email = $('#email').val();
@@ -26,15 +34,23 @@ $(document).ready(function () {
 		const Errores = [];
 
 		if  (!Correo.test(Email) || !Email.trim()) {
-			console.log("Email invalido");
-			return;
+			
+			Errores.push({
+				tipo: alertEmail,
+				msg: "Email no valido"
+			})
 		}
 		if (!(textCamp.length > 20) || (!textCamp.trim())) {
-			console.log(textCamp.length)
-			console.log("Texto demasiado corto");
-			return;
+			Errores.push({
+				tipo: alertCamp,
+				msg: "Texto demasiado corto"
+			})
 		}
 		
+		if (Errores.length !== 0 ) {
+			mensajeError(Errores)
+			return
+		}
 		console.log("Formulario enviado")
 		mensajeConfirmacion();
 		resetForm();
