@@ -4,14 +4,22 @@ $(document).ready(function () {
 	let formulario = $('#FormularioContacto');
 	// validaciones
 	let Correo = /^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$/
-	let Text = /^[a-zA-Z0-9\_\-]{4,16}$/
 
+	let alertEmail = $('#alertEmail');
+	let alertCamp = $('#alertTextCamp');
+	let alertEnviado = $('#alertEnviado');
+
+	const mensajeConfirmacion = () => {
+		$(alertEnviado).removeClass("d-none");
+	}
 
 
 	$(formulario).submit(function(e) {
 		e.preventDefault();
 		let Email = $('#email').val();
 		let textCamp = $('#campoTexto').val();
+
+		$(alertEnviado).addClass("d-none");
 
 		if  (!Correo.test(Email)) {
 			console.log("Email invalido");
@@ -24,6 +32,7 @@ $(document).ready(function () {
 		}
 		
 		console.log("Formulario enviado")
+		mensajeConfirmacion();
 	})
 
 });

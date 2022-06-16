@@ -126,7 +126,6 @@
           method="POST"
           enctype="application/x-www-form-urlencoded"
           id="FormularioContacto"
-          novalidate
           >
             <div class="input-group mb-3 email--modificacion email--size email--color" data-aos="fade-right" data-aos-duration="800">
               <input
@@ -143,6 +142,7 @@
                 <span class="input-group-text">@example.com</span>
               </div>
             </div>
+            <p class="text-danger d-none" id="alertEmail" data-aos="fade-up" data-aos-duration="800"></p>
             <textarea
               name="areadetexto"
               id="campoTexto"
@@ -153,6 +153,7 @@
               required
               data-aos="fade-right" data-aos-duration="800"
             ></textarea>
+            <p class="text-danger m-2 d-none" id="alertTextCamp" data-aos="fade-up" data-aos-duration="800"></p>
             <div class="boton__enviar--modificacion boton__enviar--size boton__enviar--color boton__enviar--animate">
               <input
                 type="submit"
@@ -162,6 +163,9 @@
               />
             </div>
           </form>
+          <div class="alert alert-success d-none" id="alertEnviado" data-aos="fade-right" data-aos-duration="800">
+            <p>Enviado con exito</p>
+          </div>
         </div>
       </div>
       <div class="redes--modificacion redes--size redes--color" >
