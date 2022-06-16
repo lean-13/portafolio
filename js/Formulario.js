@@ -13,7 +13,9 @@ $(document).ready(function () {
 		$(alertEnviado).removeClass("d-none");
 	}
 
-
+	const resetForm = () => {
+		$(formulario)[0].reset()
+	}
 	$(formulario).submit(function(e) {
 		e.preventDefault();
 		let Email = $('#email').val();
@@ -21,11 +23,13 @@ $(document).ready(function () {
 
 		$(alertEnviado).addClass("d-none");
 
-		if  (!Correo.test(Email)) {
+		const Errores = [];
+
+		if  (!Correo.test(Email) || !Email.trim()) {
 			console.log("Email invalido");
 			return;
 		}
-		if (!(textCamp.length > 20)) {
+		if (!(textCamp.length > 20) || (!textCamp.trim())) {
 			console.log(textCamp.length)
 			console.log("Texto demasiado corto");
 			return;
@@ -33,6 +37,7 @@ $(document).ready(function () {
 		
 		console.log("Formulario enviado")
 		mensajeConfirmacion();
+		resetForm();
 	})
 
 });
