@@ -475,7 +475,7 @@ body::-webkit-scrollbar-thumb {
 .seccion__proyectos--modificacion {
   display: -ms-grid;
   display: grid;
-  grid-auto-rows: 10rem;
+  grid-auto-rows: 12rem;
   gap: 4rem;
   -ms-grid-columns: (minmax(16rem, 1fr))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));

@@ -151,7 +151,6 @@ body::-webkit-scrollbar-thumb {
 
     div {
         margin-bottom: 20px;
-        
     }
     div img {
         width: 5rem;
@@ -172,7 +171,7 @@ body::-webkit-scrollbar-thumb {
 .seccion__proyectos--modificacion {
     // grid
     display: grid;
-    grid-auto-rows: 10rem;
+    grid-auto-rows: 12rem;
     gap: 4rem;
     grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
 }
