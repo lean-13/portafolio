@@ -179,6 +179,7 @@ body::-webkit-scrollbar-thumb {
 .footer--size {
   margin-left: 5rem;
   margin-right: 5rem;
+  margin-top: 5rem;
 }
 
 .formulario--modificacion {
@@ -364,71 +365,6 @@ body::-webkit-scrollbar-thumb {
   color: #818AA6;
 }
 
-#proyectos {
-  margin-top: 100px;
-  margin-left: 5rem;
-  margin-right: 5rem;
-}
-
-#proyectos h4 {
-  color: #0bb9b1;
-  padding-bottom: 20px;
-}
-
-.seccion__proyectos--modificacion {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-rows: 18rem;
-  gap: 4rem;
-  -ms-grid-columns: (minmax(16rem, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
-}
-
-.proyectos--modificacion {
-  position: relative;
-}
-
-.proyectos--modificacion img {
-  border-radius: 10px;
-}
-
-.proyectos--size {
-  width: 23rem;
-  height: 15rem;
-}
-
-.proyectos--size img {
-  max-width: 20rem;
-  max-height: 22rem;
-  min-width: 20rem;
-  min-height: 12rem;
-}
-
-.descripcion__proyecto {
-  position: absolute;
-  text-align: center;
-  visibility: hidden;
-  opacity: 0;
-  width: 90%;
-  height: 84%;
-  top: 0;
-  background-color: #131e4098;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.descripcion__proyecto p {
-  padding-top: 7rem;
-  color: #f1f1f0;
-}
-
-.proyectos--modificacion:hover .descripcion__proyecto {
-  visibility: visible;
-  opacity: 1;
-  -webkit-transform: translateY(-6px);
-          transform: translateY(-6px);
-}
-
 .conocimientos--modificacion {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -513,5 +449,64 @@ body::-webkit-scrollbar-thumb {
   width: 5rem;
   height: 5rem;
   border-radius: 10px;
+}
+
+#proyectos {
+  margin-top: 100px;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+#proyectos h4 {
+  color: #0bb9b1;
+  padding-bottom: 20px;
+}
+
+.seccion__proyectos--modificacion {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-rows: 9rem;
+  gap: 4rem;
+  -ms-grid-columns: (minmax(16rem, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+}
+
+.proyectos--modificacion {
+  position: relative;
+}
+
+.proyectos--modificacion img {
+  border-radius: 10px;
+}
+
+.proyectos--size img {
+  width: 100%;
+  height: auto;
+}
+
+.descripcion__proyecto {
+  border-radius: 10px;
+  position: absolute;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  height: 124%;
+  top: 0;
+  background-color: #131e4098;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.descripcion__proyecto p {
+  padding-top: 25%;
+  color: #f1f1f0;
+}
+
+.proyectos--modificacion:hover .descripcion__proyecto {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
 }
 /*# sourceMappingURL=style.css.map */

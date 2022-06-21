@@ -80,64 +80,7 @@ body::-webkit-scrollbar-thumb {
     color: $color2;
 }
 
-// seccion proyectos
-#proyectos {
-    margin-top: 100px;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    h4 {
-        color: $color4;
-        padding-bottom: 20px;
-    }
-}
-.seccion__proyectos--modificacion {
-    // grid
-    display: grid;
-    grid-auto-rows: 18rem;
-    gap: 4rem;
-    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
-}
-// card proyectos
-.proyectos--modificacion {
-    position: relative;
-    img {
-        border-radius: 10px;
-    }
-}
 
-.proyectos--size {
-    width: 23rem;
-    height: 15rem;
-    img {
-        max-width: 20rem;
-        max-height: 22rem;
-        min-width: 20rem;
-        min-height: 12rem;
-    }
-}
-.descripcion__proyecto {
-    position: absolute;
-    text-align: center;
-    visibility: hidden;
-    opacity: 0;
-    // size 
-    width: 90%;
-    height: 84%;
-    top: 0;
-    // color
-    background-color: #131e4098;
-    transition: all 0.3s ease;
-    p {
-        padding-top: 7rem;
-        color: $color3;
-    }
-}
-.proyectos--modificacion:hover .descripcion__proyecto {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(-6px);    
-
-}
 // section skill
 .conocimientos--modificacion {
     display: flex;
@@ -212,4 +155,60 @@ body::-webkit-scrollbar-thumb {
         height: 5rem;
         border-radius: 10px;
     }
+}
+// seccion proyectos
+#proyectos {
+    margin-top: 100px;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    h4 {
+        color: $color4;
+        padding-bottom: 20px;
+    }
+}
+.seccion__proyectos--modificacion {
+    // grid
+    display: grid;
+    grid-auto-rows: 9rem;
+    gap: 4rem;
+    grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+}
+// card proyectos
+.proyectos--modificacion {
+    position: relative;
+    img {
+        border-radius: 10px;
+    }
+}
+
+.proyectos--size {
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+.descripcion__proyecto {
+    border-radius: 10px;
+    position: absolute;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    // size 
+    width: 100%;
+    height: 124%;
+    top: 0;
+    // color
+    background-color: #131e4098;
+    transition: all 0.3s ease;
+    p {
+        padding-top: 25%;
+        color: $color3;
+    }
+}
+.proyectos--modificacion:hover .descripcion__proyecto {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-6px);    
+
 }
