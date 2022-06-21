@@ -91,7 +91,7 @@ body::-webkit-scrollbar-thumb {
     padding-top: 300px;
 }
 .text__conocimiento {
-
+    max-width: 80%;
     p {
         color: $color3;
     }
@@ -126,7 +126,10 @@ body::-webkit-scrollbar-thumb {
 }
 // skill 
 .skill {
-    width: 140px;
+    h4 {
+        width: 140px;
+    }
+    
 }
 .skill__lec {
     min-width: 40%;
