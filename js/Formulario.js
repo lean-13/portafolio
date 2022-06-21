@@ -16,7 +16,6 @@ $(document).ready(function () {
 		Errores.forEach(item => {
 			$(item.tipo).removeClass("d-none");
 			$(item.tipo).text(item.msg);
-
 		})
 	}
 	const resetForm = () => {
@@ -26,6 +25,7 @@ $(document).ready(function () {
 
 	$(formulario).submit(function(e) {
 		e.preventDefault();
+		// imput
 		let Email = $('#email').val();
 		let textCamp = $('#campoTexto').val();
 
@@ -33,8 +33,7 @@ $(document).ready(function () {
 
 		const Errores = [];
 
-		if  (!Correo.test(Email) || !Email.trim()) {
-			
+		if (!Correo.test(Email) || !Email.trim()) {
 			Errores.push({
 				tipo: alertEmail,
 				msg: "Email no valido"
