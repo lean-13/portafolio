@@ -98,7 +98,13 @@
         color: $color3;
     }
 }
-
+.redes__contacto--color div:hover {
+    a {
+        color: $color4;
+        transition: 0.7s;
+    }
+   
+}
 // boton
 .boton__enviar--modificacion input{
     border-radius: 5px;

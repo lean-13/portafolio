@@ -269,6 +269,12 @@ body::-webkit-scrollbar-thumb {
   color: #f1f1f0;
 }
 
+.redes__contacto--color div:hover a {
+  color: #0bb9b1;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
 .boton__enviar--modificacion input {
   border-radius: 5px;
   border: none;
@@ -469,7 +475,7 @@ body::-webkit-scrollbar-thumb {
 .seccion__proyectos--modificacion {
   display: -ms-grid;
   display: grid;
-  grid-auto-rows: 9rem;
+  grid-auto-rows: 10rem;
   gap: 4rem;
   -ms-grid-columns: (minmax(16rem, 1fr))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));

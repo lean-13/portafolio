@@ -172,7 +172,7 @@ body::-webkit-scrollbar-thumb {
 .seccion__proyectos--modificacion {
     // grid
     display: grid;
-    grid-auto-rows: 9rem;
+    grid-auto-rows: 10rem;
     gap: 4rem;
     grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
 }
