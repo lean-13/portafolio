@@ -212,6 +212,11 @@ body::-webkit-scrollbar-thumb {
   color: #f1f1f0;
 }
 
+.alertSize {
+  border-radius: 5px;
+  background-color: #0D1117;
+}
+
 .redes--modificacion {
   text-align: center;
 }
