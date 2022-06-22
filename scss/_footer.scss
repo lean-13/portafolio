@@ -36,10 +36,14 @@
     border-color: $color4;
     color: $color2;
 }
+// textarea
 .formulario--color textarea {
     background-color: $color1; 
     border-color: $color4;
     color: $color3;
+}
+.formulario--size textarea {
+    resize: none;
 }
 // alert
 .alertSize {

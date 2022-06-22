@@ -212,6 +212,10 @@ body::-webkit-scrollbar-thumb {
   color: #f1f1f0;
 }
 
+.formulario--size textarea {
+  resize: none;
+}
+
 .alertSize {
   border-radius: 5px;
   background-color: #0D1117;
