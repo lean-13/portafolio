@@ -38,12 +38,17 @@ $(document).ready(function () {
 				tipo: alertEmail,
 				msg: "Email no valido"
 			})
+		} else {
+			$(alertEmail).addClass("d-none")
 		}
+
 		if (!(textCamp.length > 20) || (!textCamp.trim())) {
 			Errores.push({
 				tipo: alertCamp,
 				msg: "Texto demasiado corto"
 			})
+		}else {
+			$(alertCamp).addClass("d-none")
 		}
 		
 		if (Errores.length !== 0 ) {
