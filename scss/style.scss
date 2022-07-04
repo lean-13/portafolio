@@ -125,12 +125,6 @@ body::-webkit-scrollbar-thumb {
     box-shadow: 0px 0px 0px 0px $color4;
 }
 // skill 
-.skill {
-    h4 {
-        width: 140px;
-    }
-    
-}
 .skill__lec {
     min-width: 40%;
     // color
@@ -140,6 +134,10 @@ body::-webkit-scrollbar-thumb {
     min-width: 40%;
     // color
     color: $color4;
+
+    h4 {
+        width: 240px;
+    }
 }
 
 .img__skill--modificacion {

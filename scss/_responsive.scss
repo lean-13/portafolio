@@ -25,14 +25,20 @@
     }
     .skill__lec {
       align-items: center;
-
        h4 {
          padding-left: 40%; 
        }
+       .text__conocimiento {
+          margin-left: 10%;
+          width: 320%;
+       }
     }
+
     .skill__tec {
+      padding-top: 60px;
       h4 {
         padding-left: 30%;
+        padding-bottom: 10px;
       }
     }
     #proyectos {

@@ -118,8 +118,16 @@ body::-webkit-scrollbar-thumb {
   .skill__lec h4 {
     padding-left: 40%;
   }
+  .skill__lec .text__conocimiento {
+    margin-left: 10%;
+    width: 320%;
+  }
+  .skill__tec {
+    padding-top: 60px;
+  }
   .skill__tec h4 {
     padding-left: 30%;
+    padding-bottom: 10px;
   }
   #proyectos {
     -webkit-box-align: center;
@@ -438,10 +446,6 @@ body::-webkit-scrollbar-thumb {
           box-shadow: 0px 0px 0px 0px #0bb9b1;
 }
 
-.skill h4 {
-  width: 140px;
-}
-
 .skill__lec {
   min-width: 40%;
   color: #0bb9b1;
@@ -450,6 +454,10 @@ body::-webkit-scrollbar-thumb {
 .skill__tec {
   min-width: 40%;
   color: #0bb9b1;
+}
+
+.skill__tec h4 {
+  width: 240px;
 }
 
 .img__skill--modificacion {

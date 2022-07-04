@@ -55,9 +55,11 @@ $(document).ready(function () {
 			mensajeError(Errores)
 			return
 		}
-		console.log("Formulario enviado")
+
+		
 		mensajeConfirmacion();
 		resetForm();
+
 	})
 
 });
