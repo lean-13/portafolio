@@ -1,5 +1,5 @@
 
-const EdadText = document.querySelector('.Edad');
+const EdadText = document.querySelector('.Edad__Text');
 const Fecha = '20/10/2001';
 
 
@@ -13,7 +13,7 @@ function calcularEdad(birthday) {
 }
 
 
-console.log(calcularEdad(Fecha));
+console.log(calcularEdad(Fecha));   
 
 EdadText.textContent = calcularEdad(Fecha);
 
