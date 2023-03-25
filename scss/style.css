@@ -403,12 +403,13 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 
-#proyectos {
-  margin-top: 100px;
-  margin-left: 5rem;
-  margin-right: 5rem;
+.Seccion__Proyectos {
+  margin-top: 80px;
+  margin-left: 80px;
+  margin-right: 10px;
 }
-#proyectos h4 {
+
+.proyectos h4 {
   color: #0bb9b1;
   padding-bottom: 20px;
 }
