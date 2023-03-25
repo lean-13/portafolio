@@ -12,8 +12,5 @@ function calcularEdad(birthday) {
     return Math.abs(ageDate.getUTCFullYear() - 1970);
 }
 
-
-console.log(calcularEdad(Fecha));   
-
 EdadText.textContent = calcularEdad(Fecha);
 
